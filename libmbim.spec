@@ -72,7 +72,8 @@ This package contains MBIM command line utilities.
 %files utils
 %{_bindir}/mbim-network
 %{_bindir}/mbimcli
-
+%{_mandir}/man1/mbim-network.1.*
+%{_mandir}/man1/mbimcli.1.*
 #----------------------------------------------------------------------------
 
 %prep
