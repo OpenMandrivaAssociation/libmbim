@@ -1,11 +1,11 @@
-%define major 0
+%define major 4
 %define libname %mklibname mbim-glib %{major}
 %define devname %mklibname mbim-glib -d
 
 Summary:	MBIM modem protocol helper library
 Name:		libmbim
-Version:	1.8.0
-Release:	3
+Version:	1.10.0
+Release:	1
 License:	GPLv2+
 Group:		System/Libraries
 Url:		http://cgit.freedesktop.org/libmbim/libmbim/
@@ -74,6 +74,8 @@ This package contains MBIM command line utilities.
 %{_bindir}/mbimcli
 %{_mandir}/man1/mbim-network.1.*
 %{_mandir}/man1/mbimcli.1.*
+%{_libexecdir}/mbim-proxy
+
 #----------------------------------------------------------------------------
 
 %prep
@@ -82,7 +84,8 @@ This package contains MBIM command line utilities.
 %build
 %configure2_5x \
 	--disable-static \
-	--enable-gtk-doc
+	--enable-gtk-doc \
+	--enable-more-warnings=no
 %make
 
 %install
