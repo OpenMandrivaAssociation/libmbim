@@ -1,4 +1,2 @@
-removed_sources:
-  libmbim-1.8.0.tar.xz: ed823958c47efdfb3e0dd9174d37e7b2b106f73f
 sources:
-  libmbim-1.12.0.tar.xz: f79aceee36044697d1f3c687e45fb372b6620c22
+  libmbim-1.12.2.tar.xz: 662a779ee7cb343c76971fb3339de2bdb77c4f31
