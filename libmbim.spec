@@ -4,7 +4,7 @@
 
 Summary:	MBIM modem protocol helper library
 Name:		libmbim
-Version:	1.12.4
+Version:	1.14.2
 Release:	1
 License:	GPLv2+
 Group:		System/Libraries
@@ -72,6 +72,7 @@ This package contains MBIM command line utilities.
 %files utils
 %{_bindir}/mbim-network
 %{_bindir}/mbimcli
+%{_datadir}/bash-completion/completions/mbimcli
 %{_mandir}/man1/mbim-network.1.*
 %{_mandir}/man1/mbimcli.1.*
 %{_libexecdir}/mbim-proxy
@@ -93,4 +94,3 @@ This package contains MBIM command line utilities.
 
 %check
 make check
-
