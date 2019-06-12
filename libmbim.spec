@@ -80,17 +80,17 @@ This package contains MBIM command line utilities.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure \
 	--disable-static \
 	--enable-gtk-doc \
 	--enable-more-warnings=no
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %check
 make check
