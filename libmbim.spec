@@ -4,7 +4,7 @@
 
 Summary:	MBIM modem protocol helper library
 Name:		libmbim
-Version:	1.18.2
+Version:	1.20.0
 Release:	1
 License:	GPLv2+
 Group:		System/Libraries
@@ -87,6 +87,7 @@ This package contains MBIM command line utilities.
 	--disable-static \
 	--enable-gtk-doc \
 	--enable-more-warnings=no
+
 %make_build
 
 %install
