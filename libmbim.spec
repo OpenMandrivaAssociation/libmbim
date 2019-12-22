@@ -4,7 +4,7 @@
 
 Summary:	MBIM modem protocol helper library
 Name:		libmbim
-Version:	1.20.2
+Version:	1.20.4
 Release:	1
 License:	GPLv2+
 Group:		System/Libraries
@@ -21,11 +21,11 @@ by the USB Implementors Forum.
 
 #----------------------------------------------------------------------------
 
-%package -n	%{libname}
+%package -n %{libname}
 Summary:	Libraries for %{name}
 Group:		Development/C
 
-%description -n	%{libname}
+%description -n %{libname}
 The Mobile Broadband Interface Model (MBIM) is a new standard
 to communicate with mobile broadband modem devices developed
 by the USB Implementors Forum.
@@ -37,12 +37,12 @@ This package contains MBIM shared libraries.
 
 #----------------------------------------------------------------------------
 
-%package -n	%{devname}
+%package -n %{devname}
 Summary:	Header files and development libraries for %{name}
 Group:		Development/C
 Requires:	%{libname} = %{EVRD}
 
-%description -n	%{devname}
+%description -n %{devname}
 The Mobile Broadband Interface Model (MBIM) is a new standard
 to communicate with mobile broadband modem devices developed
 by the USB Implementors Forum.
