@@ -74,6 +74,8 @@ This package contains MBIM command line utilities.
 %{_bindir}/mbimcli
 %{_datadir}/bash-completion/completions/mbimcli
 %{_libexecdir}/mbim-proxy
+%{_mandir}/man1/mbim-network.1*
+%{_mandir}/man1/mbimcli.1*
 
 #----------------------------------------------------------------------------
 
