@@ -12,6 +12,7 @@ Url:		http://cgit.freedesktop.org/libmbim/libmbim/
 Source0:	http://www.freedesktop.org/software/libmbim/libmbim-%version.tar.xz
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gudev-1.0)
+BuildRequires:	autoconf-archive
 BuildRequires:	gtk-doc
 
 %description
