@@ -4,7 +4,7 @@
 
 Summary:	MBIM modem protocol helper library
 Name:		libmbim
-Version:	1.22.0
+Version:	1.23.900
 Release:	1
 License:	GPLv2+
 Group:		System/Libraries
