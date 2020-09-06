@@ -4,7 +4,7 @@
 
 Summary:	MBIM modem protocol helper library
 Name:		libmbim
-Version:	1.24.0
+Version:	1.24.2
 Release:	1
 License:	GPLv2+
 Group:		System/Libraries
@@ -56,6 +56,19 @@ This package contains MBIM header files and development libraries.
 %{_libdir}/libmbim-glib.so
 %{_libdir}/pkgconfig/mbim-glib.pc
 %{_datadir}/gtk-doc/html/*
+
+#----------------------------------------------------------------------------
+%package gir
+Summary:        GObject Introspection interface to libmbim
+Group:          Development/C
+Requires:       %{libname} = %{version}
+
+%description gir
+GObject Introspection interface to libmbim
+
+%files gir
+%{_libdir}/girepository-1.0/Mbim-1.0.typelib
+%{_datadir}/gir-1.0/Mbim-1.0.gir
 
 #----------------------------------------------------------------------------
 
