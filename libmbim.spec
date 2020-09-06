@@ -62,7 +62,7 @@ This package contains MBIM header files and development libraries.
 Summary:        GObject Introspection interface to libmbim
 Group:          Development/C
 Requires:       %{libname} = %{version}
-BuildRequires:	gobject-introspection
+BuildRequires:	pkgconfig(gobject-introspection-1.0)
 
 %description gir
 GObject Introspection interface to libmbim
