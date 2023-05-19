@@ -37,7 +37,7 @@ by the USB Implementors Forum.
 This package contains MBIM shared libraries.
 
 %files -n %{libname}
-%doc AUTHORS COPYING NEWS
+%doc AUTHORS NEWS
 %{_libdir}/libmbim-glib.so.%{major}*
 
 #----------------------------------------------------------------------------
