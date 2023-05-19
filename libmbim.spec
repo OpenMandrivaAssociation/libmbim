@@ -4,13 +4,17 @@
 
 Summary:	MBIM modem protocol helper library
 Name:		libmbim
-Version:	1.26.4
-Release:	2
+Version:	1.28.4
+Release:	1
 License:	GPLv2+
 Group:		System/Libraries
 Url:		http://cgit.freedesktop.org/libmbim/libmbim/
-Source0:	http://www.freedesktop.org/software/libmbim/libmbim-%version.tar.xz
+Source0:	https://gitlab.freedesktop.org/mobile-broadband/libmbim/-/archive/%{version}/libmbim-%{version}.tar.bz2	
+#Source0:	http://www.freedesktop.org/software/libmbim/libmbim-%version.tar.xz
+BuildRequires:	meson
+BuildRequires:	pkgconfig(bash-completion)
 BuildRequires:	pkgconfig(glib-2.0)
+BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(gudev-1.0)
 BuildRequires:	autoconf-archive
 BuildRequires:	gtk-doc
@@ -98,15 +102,9 @@ This package contains MBIM command line utilities.
 %autosetup -p1
 
 %build
-%configure \
-	--disable-static \
-	--enable-gtk-doc \
-	--enable-more-warnings=no
+%meson
 
-%make_build
+%meson_build
 
 %install
-%make_install
-
-%check
-make check
+%meson_install
