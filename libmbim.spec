@@ -102,7 +102,8 @@ This package contains MBIM command line utilities.
 %autosetup -p1
 
 %build
-%meson
+%meson \
+        -Dgtk_doc=true
 
 %meson_build
 
