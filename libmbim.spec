@@ -8,7 +8,7 @@ Version:	1.30.0
 Release:	1
 License:	GPLv2+
 Group:		System/Libraries
-Url:		http://cgit.freedesktop.org/libmbim/libmbim/
+Url:		https://cgit.freedesktop.org/libmbim/libmbim/
 Source0:	https://gitlab.freedesktop.org/mobile-broadband/libmbim/-/archive/%{version}/libmbim-%{version}.tar.bz2	
 #Source0:	http://www.freedesktop.org/software/libmbim/libmbim-%version.tar.xz
 BuildRequires:	meson
